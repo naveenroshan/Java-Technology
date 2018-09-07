@@ -60,23 +60,6 @@ public class Fulltest {
         driver.findElement(By.id("android:id/button1")).click();    
     }
 	
-	@Test
-	public void login() throws InterruptedException{
-        
-		Thread.sleep(1000);       
-        driver.findElement(By.id("com.android.packageinstaller:id/permission_allow_button")).click();
-        Thread.sleep(1000);
-        driver.findElement(By.id("com.android.packageinstaller:id/permission_allow_button")).click();
-        Thread.sleep(1000);
-        driver.findElement(By.id("com.espn.score_center.debug:id/btn_login")).click();
-        Thread.sleep(1000);
-        driver.findElement(By.id("com.espn.score_center.debug:id/nextText")).click();
-        Thread.sleep(1000);
-        driver.findElement(By.id("com.espn.score_center.debug:id/nextText")).click();
-        Thread.sleep(1000);
-        driver.findElement(By.id("android:id/button1")).click();    
-    }
-
 	@AfterTest	
 	public void closeApp() throws Exception {
 		try
