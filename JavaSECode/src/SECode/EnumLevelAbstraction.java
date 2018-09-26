@@ -12,7 +12,7 @@ public enum EnumLevelAbstraction {
 		TWO
 		{
 			public String asLowerCase() {
-	            return MEDIUM.toString().toLowerCase();
+	            return TWO.toString().toLowerCase();
 	        }
 		},
 		THREE
@@ -22,5 +22,5 @@ public enum EnumLevelAbstraction {
 	        }
 		},
 
-		public abstract String asLowerCase();	
+		//public abstract String asLowerCase();	
 	}
