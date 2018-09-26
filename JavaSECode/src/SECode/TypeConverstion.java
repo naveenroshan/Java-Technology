@@ -7,7 +7,7 @@ public class TypeConverstion {
      // the process of type converstion in java
 	public static void main(String[] args) {
 		byte b;
-		int i = 257;
+		int i = 257:
 		double d = 323.142;
 		System.out.println("\nConversion of int to byte.");
 		b = (byte) i;
