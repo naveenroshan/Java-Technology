@@ -5,6 +5,7 @@ package SECode;
 */
 
 //here we are working on the enum examples.
+//test run class is ClassEnum
 
 public enum Level {
 
