@@ -14,6 +14,7 @@ public class StackImplementation {
 	StackImplementation() {
 		tos = -1;
 	}
+	
 
 	// Push an item onto the stack
 	void push(int item) {
