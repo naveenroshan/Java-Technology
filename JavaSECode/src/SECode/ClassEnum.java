@@ -6,7 +6,7 @@ package SECode;
  */
 
 //this is class enum to work with Level enum.
-
+// this is the test run class
 public class ClassEnum {
 
 	public static void main(String[] args) {
