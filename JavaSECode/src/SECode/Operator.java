@@ -6,6 +6,9 @@ package SECode;
  */
 // here we see the example of the bit wise ,ternary operator 
 public class Operator {
+    
+    // bit wise operator example two :
+    
 
     public static void main(String[] args) {
 
@@ -44,6 +47,9 @@ public class Operator {
 	    i = -10;
 	    k = (i < 0) ? -i : i; // get absolute value of i
 	    System.out.print("Absolute value of " + i + " is " + k);
+	    
+	
+	    
 	}
     }
 }
