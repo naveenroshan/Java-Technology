@@ -1,7 +1,9 @@
 JAVA Developer skills:
 TOP BOOKS:
 > Think in java bruce eckel
+
 > The complete java reference by herbert schildt
+
 > Head first java
 
 CORE JAVA Syllabus:
@@ -447,6 +449,7 @@ Others:
 -----------------------------------------------------------------------
 Java desgin patten URL:
 > https://www.tutorialspoint.com/design_pattern/
+
 > https://www.javatpoint.com/design-patterns-in-java
 
 
