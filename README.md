@@ -6,6 +6,10 @@ TOP BOOKS:
 
 > Head first java
 
+> Effective java
+
+> Iron-Clad Java Building Secure Web Applications [Manico & Detlefsen 2014-09-12]
+
 CORE JAVA Syllabus:
 
 1. Core Java Programming Introduction of Java
