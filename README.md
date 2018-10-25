@@ -19,18 +19,25 @@ First Java Program through command prompt
 First Java Program through Eclipse
 
 2. Data types and Operators
-Primitive Datatypes, Declarations, Ranges
+Primitive Datatypes, 
+Declarations, 
+Ranges
 Variable Names Conventions
-Numeric Literals, Character Literals
+Numeric Literals, 
+Character Literals
 String Literals
 Arrays(One dimensional; two- dimensional)
 Array of Object References
-Accessing arrays, manipulating arrays
+Accessing arrays, 
+manipulating arrays
 Enumerated Data Types
 Non-Primitive Datatypes
-Defining a class, variable and method in Java
-Method Signature; method calls
-Expressions in Java; introduction to various operators
+Defining a class, 
+variable and method in Java
+Method Signature; 
+method calls
+Expressions in Java; 
+introduction to various operators
 Assignment Operator
 Arithmetic Operators
 Relational Operators
