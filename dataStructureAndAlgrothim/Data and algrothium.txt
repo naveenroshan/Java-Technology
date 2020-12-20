@@ -1,0 +1,18 @@
+The below topics are from the website Òjavaworld websiteÓ
+https://www.javaworld.com/article/3215112/learn-java/java-101-datastructures-and-algorithms-in-java-part-1.html
+
+TOPICS covered :
+> Data Structure
+> Algorithms
+> Space complexity
+> Time complexity
+> Arrays
+> Linear and Binary search
+> Bubble , Selection and Insertion sort
+> multidimensional array 
+>ragged array
+>linked list
+>single linked list
+>merge sort
+>double linked list
+
