@@ -450,10 +450,3 @@ Others:
 •  HTTP SERVERS - Apache, Nginx, Monkey, Lighttpd.
 
 •  Microservices, Kubernetes, Docker, ElasticSearch, Kafka 
------------------------------------------------------------------------
-Java desgin patten URL:
-> https://www.tutorialspoint.com/design_pattern/
-
-> https://www.javatpoint.com/design-patterns-in-java
-
-
