@@ -27,8 +27,6 @@ public class CouponRestController {
 	// get the coupon from the data base which the client requested code
 	@RequestMapping(value = "/coupons/{code}", method = RequestMethod.GET)
 	public Coupon getCoupon(@PathVariable("code") String code) {
-		return repo.findByCode(code);
-		
-	}
-	
+		return repo.findByCode(code);		
+	}	
 }

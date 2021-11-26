@@ -19,3 +19,7 @@ code varchar(20) UNIQUE,
 discount decimal(8,3),
 exp_date varchar(100) 
 );
+
+Select * from coupon;
+
+select * from product;

@@ -1,16 +1,8 @@
-package com.naveen.springcloud.model;
+package com.naveen.springcloud.dto;
 
 import java.math.BigDecimal;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
-@Entity
 public class Coupon {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id; // for storing ID record in the table
 	private String code; // for storing Code record in the table
 	private BigDecimal discount; // for storing discount record in the table
@@ -39,4 +31,5 @@ public class Coupon {
 	public void setExpDate(String expDate) {
 		this.expDate = expDate;
 	}
+
 }
