@@ -1,4 +1,4 @@
-- Microservice App with AWS and Devops Tools
+-Java Microservice App with AWS and Devops Tools
   - Introduction
   - Spring Boot 
   - AWS
@@ -12,3 +12,9 @@
 	- Git
   	- Docker
 	- Kubernetes
+  - SSH - secure shell
+  - username = ec2-user
+  - Mobaxterm client for AWS server
+  - Linux directories and files command 
+  - Linux yum command to install packages
+ 
