@@ -1,4 +1,5 @@
 - Project Outlook for the project :
+
 	- Create Model and Repository
 	- Create the REST Controller
 	- Configure the datasource
