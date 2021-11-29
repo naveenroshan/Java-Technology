@@ -22,11 +22,11 @@
 
 ----------------------------------------AWS----------------------------------------------------
    - MYSQL installation in EC2
-	- yum install -y mariadb-server
-	- systemctl enable mariadb (automatic start the db service when the EC2 instance starts)
-	- systemctl start mariadb (automatic start the db service when the EC2 instance starts)
-	- mysql_secure_installation
-	- mysql -uroot -p
+	- `yum install -y mariadb-server`
+	- `systemctl enable mariadb (automatic start the db service when the EC2 instance starts)`
+	- `systemctl start mariadb (automatic start the db service when the EC2 instance starts)`
+	- `mysql_secure_installation`
+	- `mysql -uroot -p`
 
    - JAVA Installation in EC2
 	- yum install java-1.8.0-openjdk
