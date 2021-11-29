@@ -21,7 +21,7 @@
    - Linux yum command to install packages
 
 ----------------------------------------AWS----------------------------------------------------
-   - MYSQL installation in EC2
+   - MYSQL installation in EC2:
 
       ```
       $ yum install -y mariadb-server
@@ -31,21 +31,21 @@
 	$ mysql -uroot -p
        ```
 
-   - JAVA Installation in EC2
+   - JAVA Installation in EC2:
         
         ```
 	$ yum install java-1.8.0-openjdk
 	$ alternatives --config java 
         ```
 
-   - Getting microserver app from S3 and run it
+   - Getting microserver app from S3 and run it:
         
         ```
 	$ wget https://firsts3bucketone.s3.us-east-2.amazonaws.com/couponservice-0.0.1-SNAPSHOT.jar
 	$ java -jar "microserver name"
         ```
 
-   - Uploading the jar to S3 
+   - Uploading the jar to S3:
 
        ```
         $ Coupon App S3 URL - https://firsts3bucketone.s3.us-east-2.amazonaws.com/couponservice-0.0.1-SNAPSHOT.jar`
