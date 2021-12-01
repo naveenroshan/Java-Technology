@@ -55,3 +55,5 @@ $ Coupon App S3 URL - https://firsts3bucketone.s3.us-east-2.amazonaws.com/coupon
 - ELB: Created the classic load balancer in AWS with existing EC2 instances
 
 - Auto Scaling the EC2 instance with the load balancing
+
+-Simple Notification Service with Cloud watch 
