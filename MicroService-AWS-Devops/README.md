@@ -2,19 +2,21 @@
 
 - Introduction
 - Spring Boot simple microservice app creation
-- AWS
-- Environment - EBS
-- Security - IAM / Security Groups
-- Load Balancing - ELB
-- Health Check/ Monitoring - Cloud Watch
-- S3
-- EC2
+- AWS Environment(Elastic BeanStalk) :
+       - Load Balanceing
+       - Autoscaling
+       - RDS
+       - S3
+       - SNS
+       - Security - IAM / Security Groups
+       - Health Check/ Monitoring - Cloud Watch
+       - EC2
 - CICD/Devops
-- Jenkins
-- Maven  
-- Git
-- Docker
-- Kubernetes
+        - Jenkins
+        - Maven  
+        - Git
+        - Docker
+        - Kubernetes
 - SSH - secure shell
 - Mobaxterm client for AWS server
 - Linux directories and files command 
@@ -56,4 +58,6 @@ $ Coupon App S3 URL - https://firsts3bucketone.s3.us-east-2.amazonaws.com/coupon
 
 - Auto Scaling the EC2 instance with the load balancing
 
--Simple Notification Service with Cloud watch 
+- Simple Notification Service with Cloud watch 
+
+- RDS for creating Mysql database
