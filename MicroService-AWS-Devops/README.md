@@ -3,22 +3,21 @@
 - Introduction
 - Spring Boot simple microservice app creation
 - AWS Environment(Elastic BeanStalk) :
-       - Load Balanceing
-       - Autoscaling
-       - RDS
-       - S3
-       - SNS
-       - Security - IAM / Security Groups
-       - Health Check/ Monitoring - Cloud Watch
-       - EC2
+- Load Balanceing
+- Autoscaling
+- RDS
+- S3
+- SNS
+- Security - IAM / Security Groups
+- Health Check/ Monitoring - Cloud Watch
+- EC2
 - CICD/Devops
-        - Jenkins
-        - Maven  
-        - Git
-        - Docker
-        - Kubernetes
-- SSH - secure shell
-- Mobaxterm client for AWS server
+- Jenkins
+- Maven  
+- Git
+- Docker
+- Kubernetes
+- SSH (secure shell) connection used to connect with Mobaxterm client for AWS server
 - Linux directories and files command 
 - Linux yum command to install packages
 
@@ -60,4 +59,4 @@ $ Coupon App S3 URL - https://firsts3bucketone.s3.us-east-2.amazonaws.com/coupon
 
 - Simple Notification Service with Cloud watch 
 
-- RDS for creating Mysql database
+- RDS for creating Mysql database (pwd: Rooster2193)
