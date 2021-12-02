@@ -11,7 +11,6 @@
 - Security - IAM / Security Groups
 - Health Check/ Monitoring - Cloud Watch
 - EC2
-- CICD/Devops
 - Jenkins
 - Maven  
 - Git
@@ -60,3 +59,7 @@ $ Coupon App S3 URL - https://firsts3bucketone.s3.us-east-2.amazonaws.com/coupon
 - Simple Notification Service with Cloud watch 
 
 - RDS for creating Mysql database (pwd: Rooster2193)
+
+- Iam service (Url - https://447446374989.signin.aws.amazon.com/console, pwd: Test@123):
+- user creation , policy assing for servers, role
+
