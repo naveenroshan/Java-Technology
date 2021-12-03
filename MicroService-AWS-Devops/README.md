@@ -3,14 +3,14 @@
 - Introduction
 - Spring Boot simple microservice app creation
 - AWS Environment(Elastic BeanStalk) :
-- Load Balanceing
-- Autoscaling
-- RDS
-- S3
-- SNS
-- Security - IAM / Security Groups
-- Health Check/ Monitoring - Cloud Watch
-- EC2
+  - > Load Balanceing
+  - > Autoscaling
+  - > RDS
+  - > S3
+  - > SNS
+  - > Security - IAM / Security Groups
+  - > Health Check/ Monitoring - Cloud Watch
+  - > EC2
 - Jenkins
 - Maven  
 - Git
@@ -61,5 +61,9 @@ $ Coupon App S3 URL - https://firsts3bucketone.s3.us-east-2.amazonaws.com/coupon
 - RDS for creating Mysql database (pwd: Rooster2193)
 
 - Iam service (Url - https://447446374989.signin.aws.amazon.com/console, pwd: Test@123):
-- user creation , policy assing for servers, role
+  - > user creation , policy assing for servers, role
+  - > Aws CLI user.
+  - > iamcliuser (id- AKIAWQLPB3JG33BHX5W7, key - wYzyubgmd8EshoiVpq01z604pktbWHGwoVRY23Er)
+
+- lamda service overview.
 
