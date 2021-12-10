@@ -89,4 +89,15 @@ $ docker unpaused "container id"
 $ docker commit "container id" image
 $ docker exec -it "container id" bash
 ```
+- Docker MySQL :
+```
+$ docker run -dit -p 6666:3306 --name=naveen --env="MYSQL_ROOT_PASSWORD=Root@123" --env="MYSQL_DATABASE=emp" mysql
+$ docker exec -it "container name" bash
+```
+- Docker volumes & Bind Mounts :
+```
+$ docker volume ls
+$ docker volume create "volume name"
+$ docker run -dit --mount source=myVol,destination=/tmp nginx
+```
 
