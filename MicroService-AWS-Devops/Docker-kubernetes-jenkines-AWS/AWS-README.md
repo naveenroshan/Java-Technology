@@ -29,4 +29,17 @@ $ java -jar "microserver name"
 $ Coupon App S3 URL - https://firsts3bucketone.s3.us-east-2.amazonaws.com/couponservice-0.0.1-SNAPSHOT.jar`
 ```
 - create a AMI in the Image 
-- ELB: Created the classic load balancer in AWS with existing EC2 instances
+- Created the classic load balancer in AWS with existing EC2 instances
+- Auto Scaling the EC2 instance with the load balancing
+- Simple Notification Service with Cloud watch
+- RDS for creating Mysql database (pwd: Rooster2193)
+
+- Iam service:
+```
+$ user creation (Url - https://447446374989.signin.aws.amazon.com/console, pwd: Test@123)
+$ policy assing for role
+$ interacting with AWS CLI user.
+$ created user - iamcliuser (id- AKIAWQLPB3JG33BHX5W7, key - wYzyubgmd8EshoiVpq01z604pktbWHGwoVRY23Er)
+```
+
+- lamda service overview.
