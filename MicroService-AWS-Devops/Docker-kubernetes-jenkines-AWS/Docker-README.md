@@ -40,3 +40,12 @@ $ docker run --name "servername" --net "networkname" --ip 172.19.0.2 -h web.nave
 $ docker attach "servername"
 $ docker network disconnect "networkname" "servername"
 ```
+Docker Command flow for creating image :
+```
+$ FROM ubuntu
+$ copy "localtion"
+$ ENV java_Home
+$ RUN yum install apache2
+$ CMD python -version
+$ EXPOSE 8080
+```
