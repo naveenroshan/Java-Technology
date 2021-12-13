@@ -32,3 +32,11 @@ $ docker volume ls
 $ docker volume create "volume name"
 $ docker run -dit --mount source=myVol,destination=/tmp nginx
 ```
+Docker nerwork :
+```
+$ docker network ls
+$ docker network connect "newworkname" "servername"
+$ docker run --name "servername" --net "networkname" --ip 172.19.0.2 -h web.naveen.com -p 82:80 -ti ubuntu /bin/bash
+$ docker attach "servername"
+$ docker network disconnect "networkname" "servername"
+```
