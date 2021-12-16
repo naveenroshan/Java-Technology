@@ -3,14 +3,14 @@
 - Spring Boot simple microservice app creation
 - AWS Environment(Elastic BeanStalk) :
 ```
-  -> Load Balanceing
-  -> Autoscaling
-  -> RDS
-  -> S3
-  -> SNS
-  -> Security - IAM / Security Groups
-  -> Health Check/ Monitoring - Cloud Watch
-  -> EC2
+$ Load Balanceing
+$ Autoscaling
+$ RDS
+$ S3
+$ SNS
+$ Security - IAM / Security Groups
+$ Health Check/ Monitoring - Cloud Watch
+$ EC2
 ```
 - Jenkins
 - Maven  
