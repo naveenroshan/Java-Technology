@@ -1,0 +1,25 @@
+#YAML- A'int markup language
+#YAML is super set of JSON
+
+#Simple Type
+customerName: Naveen
+orderId: 123
+date: 12/12/2022
+
+#Lists
+products:
+    - macBook
+    - Iphone
+    - Ipad
+    - Watch: Apple Watch
+
+#Objects
+Shopping: 
+    - pen: 10
+      paper: 5
+      scale: 3
+
+#dictionary or map
+address:
+    street: london
+    city: greater london
