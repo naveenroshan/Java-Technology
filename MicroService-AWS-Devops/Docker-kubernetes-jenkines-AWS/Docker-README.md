@@ -49,3 +49,15 @@ $ RUN yum install apache2
 $ CMD python -version
 $ EXPOSE 8080
 ```
+Docker Compose steps:
+```
+$ docker-compose --help
+$ up
+$ restart
+$ build
+$ Scale
+$ Stop
+$ Kill
+$ log
+$ ps
+```
