@@ -18,6 +18,7 @@ $ EC2
 - Docker
 - Docker Swarm
 - Kubernetes
+- Eclipse jkube 
 - Ansible
 - SSH (secure shell) connection used to connect with Mobaxterm client for AWS server
 - Linux directories and files command 
