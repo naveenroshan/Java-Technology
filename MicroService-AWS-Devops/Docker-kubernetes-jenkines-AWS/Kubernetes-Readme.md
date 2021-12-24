@@ -69,3 +69,11 @@ $ maxUnavailable
 $ maxSurge
 ```
 - Rollback
+
+- Volumes
+```
+$ Mount volume
+$ Config volume
+$ Secret Volume
+$ Persistent volume
+```

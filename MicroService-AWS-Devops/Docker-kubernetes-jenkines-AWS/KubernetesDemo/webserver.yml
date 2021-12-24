@@ -24,3 +24,24 @@ spec:
                   image: httpd:2
                   ports:
                     - containerPort: 80
+                  volumeMounts:
+                    - name: demovol
+                      mountPath: /data
+                    - name: demo-configmap-vol
+                      mountPath: /etc/config
+                    - name: demo-pvc
+                      mountPath: /data/clustervol
+            volumes: 
+                - name: demovol
+                  hostPath: 
+                    path: /data
+                    type: Directory 
+                - name: demo-configmap-vol
+                  configMap: 
+                    name: demo-configmap
+                - name: my-secret
+                  secret:
+                    secretName: demo-secret
+                - name: demo-pvc
+                  persistentVolumeClaim:
+                    claimName: demo-pvc
