@@ -1,9 +1,9 @@
 -------------------------------------------Docker--------------------------------------------------
 
 Jenkin login :
-admin
-Root@123
-admin@gmail.com
+ - admin
+ - Root@123
+ - admin@gmail.com
 
 Jenkin Set up:
 ```
