@@ -114,6 +114,8 @@ Web Hooks in jenkins:
    Step 2: Add web Hook, give the jenkins url
    Step 3: Add content type
    Step 4: select the push event, add web hooks button
+   Step 5: goto jenkins > build trigger > select the github hooks trigger 
+``` 
 
     
 
