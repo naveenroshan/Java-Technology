@@ -19,7 +19,7 @@ Jenkin Set up:
 
     cat /var/lib/jenkins/secrets/initialAdminPassword
 
-    service jenkins start
+    service jenkins restart
 
     yum remove jenkins
 
