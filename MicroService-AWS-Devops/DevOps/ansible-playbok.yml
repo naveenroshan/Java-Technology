@@ -1,0 +1,47 @@
+#First example for playbook copying a file in agent to a destination
+- hosts: agent1
+  vars:
+    msg: "Hello Ansible PlayBook"
+  tasks:
+    - name: Test
+      copy:
+        dest: /root/abc.txt
+        content: "{{msg}}"
+
+# Second example for playbook creating a file in agent with loop items
+- hosts: agent1
+  tasks:
+          - name: create directories if they do not exist
+            file:
+                    path: "{{item}}"
+                    state: directory
+            with_items:
+                    - dir1
+                    - dir2
+
+
+#Third example for playbook creating a file in agent for installing multiple sotware
+- hosts: agent1
+  tasks:
+          - name: install packages
+            apt:
+                    name:
+                            - git
+                            - mysql-server
+                    update_cache: yes
+
+#Four example for playbook creating a file in agent for installing software and run it using tags
+- hosts: agent1
+  tasks:
+          - name: install packages
+            apt:
+                    name:
+                            - git
+                            - mysql-server
+                    update_cache: yes
+            tags:
+                    - install
+          - name: Start Mysql
+            service: name=mysql state=started
+            tags: 
+                    - start

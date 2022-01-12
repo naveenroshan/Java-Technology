@@ -1,4 +1,4 @@
--------------------------------------------Docker--------------------------------------------------
+-------------------------------------------Jenkins--------------------------------------------------
 
 Jenkin login :
 ```
@@ -115,8 +115,14 @@ Web Hooks in jenkins:
    Step 3: Add content type
    Step 4: select the push event, add web hooks button
    Step 5: goto jenkins > build trigger > select the github hooks trigger 
-``` 
+```
+Jenkins Master - Slave
 
-    
-
-
+Jenkins Pipeline :
+```
+- Single Stage Pipeline
+- Multi Stage Pipeline
+- Reading env Variables
+- Pass Parameters to Pipeline
+- Requesting User Inputs
+```

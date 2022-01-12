@@ -1,7 +1,7 @@
 # Java Microservice App with AWS and Devops Tools
 
 - Spring Boot simple microservice app creation
-- AWS Environment(Elastic BeanStalk) :
+- AWS Environment(Elastic Bean Stalk) :
 ```
 $ Load Balanceing
 $ Autoscaling
