@@ -9,3 +9,18 @@ Flux & Mono are part of reactor-core module
 Flux represent 0-n Elements
 Mono represent 0-1 Elements
 ```
+- Flux & Mono with Function
+```
+- Reactive test in junit
+- Data Transfor: 
+      map()
+      filter()
+      flatMap()
+      concatMap()
+      flatMapMany()
+      transform()
+      defaultifEmpty()
+      switchifEmpty()
+- Combain Flux & Mono using concat()
+- merge(), mergeWith()
+```
