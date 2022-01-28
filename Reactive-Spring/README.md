@@ -21,6 +21,16 @@ Mono represent 0-1 Elements
       transform()
       defaultifEmpty()
       switchifEmpty()
-- Combain Flux & Mono using concat()
-- merge(), mergeWith()
+    Combain Flux & Mono using concat()
+    merge(), mergeWith()
+    zip() zipwith()
+
+```
+- Movie app :
+```
+services one - MoviesInfo(Name,cast,year) built using annotated controller
+service two - MoviesReview(Rating, review)built using functional Endpoint
+service three - MoviesServices(client interaction) built using annotated controller
+db - mongoDB
+Writting unit and intergation test for the reactive end points
 ```
