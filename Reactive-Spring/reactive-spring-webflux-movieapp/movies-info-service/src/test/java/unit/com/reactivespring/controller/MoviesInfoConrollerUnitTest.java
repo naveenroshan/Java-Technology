@@ -10,10 +10,8 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.web.reactive.server.WebTestClient;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-
 import java.time.LocalDate;
 import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.ArgumentMatchers.isA;
@@ -33,14 +31,12 @@ public class MoviesInfoConrollerUnitTest {
 
     @Test
     void getAllmovieInfo(){
-
         var movieinfos = List.of(new MovieInfo(null, "Batman Begins",
                         2005, List.of("Christian Bale", "Michael Cane"), LocalDate.parse("2005-06-15")),
                 new MovieInfo(null, "The Dark Knight",
                         2008, List.of("Christian Bale", "HeathLedger"), LocalDate.parse("2008-07-18")),
                 new MovieInfo("abc", "Dark Knight Rises",
                         2012, List.of("Christian Bale", "Tom Hardy"), LocalDate.parse("2012-07-20")));
-
         when(moviesInfoServiceMock.getAllMovieInfos()).thenReturn(Flux.fromIterable(movieinfos));
         webTestClient
                 .get()
@@ -54,9 +50,8 @@ public class MoviesInfoConrollerUnitTest {
 
     @Test
     void getMovieInfoById() {
-        when(moviesInfoServiceMock.getAllMovieInfosId(anyString())).thenReturn(Mono.just(new MovieInfo("abc", "Dark Knight Rises",
+        when(moviesInfoServiceMock.getAllMoviesInfosById(anyString())).thenReturn(Mono.just(new MovieInfo("abc", "Dark Knight Rises",
                 2012, List.of("Christian Bale", "Tom Hardy"), LocalDate.parse("2012-07-20"))));
-
         var movieId = "abc";
         webTestClient
                 .get()
@@ -75,12 +70,9 @@ public class MoviesInfoConrollerUnitTest {
     void addMovieInfo() {
         var movieInfo = new MovieInfo(null, "Batman Begins test",
                 2005, List.of("Christian Bale", "Michael Cane"), LocalDate.parse("2005-06-15"));
-
         when(moviesInfoServiceMock.addMovieInfo(isA(MovieInfo.class))).thenReturn(
                 Mono.just(new MovieInfo("mockId", "Batman Begins test",
-                        2005, List.of("Christian Bale", "Michael Cane"), LocalDate.parse("2005-06-15")))
-        );
-
+                        2005, List.of("Christian Bale", "Michael Cane"), LocalDate.parse("2005-06-15"))));
         webTestClient
                 .post()
                 .uri(Movie_url)
@@ -101,7 +93,6 @@ public class MoviesInfoConrollerUnitTest {
     void addMovieInfo_Validation() {
         var movieInfo = new MovieInfo(null, "",
                 -2005, List.of(""), LocalDate.parse("2005-06-15"));
-
         webTestClient
                 .post()
                 .uri(Movie_url)
@@ -120,15 +111,11 @@ public class MoviesInfoConrollerUnitTest {
     @Test
     void updateMoviesInfosById() {
         var movieInfoId = "abc";
-
         var movieInfo = new MovieInfo(null, "Dark Knight Rises unittest update",
                 2005, List.of("Christian Bale", "Michael Cane"), LocalDate.parse("2005-06-15"));
-
         when(moviesInfoServiceMock.updateMovieInfosId(isA(MovieInfo.class),isA(String.class)).thenReturn(
                 Mono.just(new MovieInfo(movieInfoId, "Dark Knight Rises unittest update",
-                        2005, List.of("Christian Bale", "Michael Cane"), LocalDate.parse("2005-06-15")))
-        ));
-
+                        2005, List.of("Christian Bale", "Michael Cane"), LocalDate.parse("2005-06-15")))));
         webTestClient
                 .put()
                 .uri(Movie_url + "/{id}", movieInfoId)
@@ -148,9 +135,7 @@ public class MoviesInfoConrollerUnitTest {
     @Test
     void deleteMoviesInfosById(){
         var movieInfoId = "abc";
-
         when(moviesInfoServiceMock.deleteMoviesInfosById(isA(String.class))).thenReturn(Mono.empty());
-
         webTestClient
                 .delete()
                 .uri(Movie_url + "/{id}", movieInfoId)

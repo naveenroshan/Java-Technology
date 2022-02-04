@@ -34,3 +34,24 @@ service three - MoviesServices(client interaction) built using annotated control
 db - mongoDB
 Writting unit and intergation test for the reactive end points
 ```
+
+- Netty:
+```
+Event Queue
+Loop
+Client --> channel ---> App
+Channel lifecycle: 
+    channelUnregistered
+    channelRegistered
+    channelActive
+    channelInActive
+```
+
+- Functional Web :
+```
+Lambdas
+methods References
+Functional interface
+Router - Rest Endpoint are configured
+Handler - Code to handle the request is located
+```

@@ -8,10 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.data.mongo.DataMongoTest;
 import org.springframework.test.context.ActiveProfiles;
 import reactor.test.StepVerifier;
-
 import java.time.LocalDate;
 import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @DataMongoTest
@@ -29,7 +27,6 @@ class MovieInfoRepoIntgTest {
                         2008, List.of("Christian Bale", "HeathLedger"), LocalDate.parse("2008-07-18")),
                 new MovieInfo("abc", "Dark Knight Rises",
                         2012, List.of("Christian Bale", "Tom Hardy"), LocalDate.parse("2012-07-20")));
-
         movieInfoRepo.saveAll(movieinfos)
                 .blockLast();
     }
@@ -57,7 +54,6 @@ class MovieInfoRepoIntgTest {
                 .verifyComplete();
     }
 
-
     @Test
     void updateMovieInfo(){
         var moviesInfo = movieInfoRepo.findById("abc").block();
@@ -67,6 +63,14 @@ class MovieInfoRepoIntgTest {
                 .assertNext(movieInfo -> {
                     assertEquals(2021,movieInfo.getYear());
                 })
+                .verifyComplete();
+    }
+
+    @Test
+    void findByYear(){
+        var moviesInfoFlux = movieInfoRepo.findByYear(2005).log();
+        StepVerifier.create(moviesInfoFlux)
+                .expectNextCount(1)
                 .verifyComplete();
     }
 

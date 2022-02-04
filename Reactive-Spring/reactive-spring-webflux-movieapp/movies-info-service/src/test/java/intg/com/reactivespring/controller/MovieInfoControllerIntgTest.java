@@ -10,10 +10,9 @@ import org.springframework.boot.test.autoconfigure.web.reactive.AutoConfigureWeb
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.web.reactive.server.WebTestClient;
-
+import org.springframework.web.util.UriComponentsBuilder;
 import java.time.LocalDate;
 import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
@@ -37,7 +36,6 @@ class MovieInfoControllerIntgTest {
                         2008, List.of("Christian Bale", "HeathLedger"), LocalDate.parse("2008-07-18")),
                 new MovieInfo("abc", "Dark Knight Rises",
                         2012, List.of("Christian Bale", "Tom Hardy"), LocalDate.parse("2012-07-20")));
-
         movieInfoRepo.saveAll(movieinfos)
                 .blockLast();
     }
@@ -50,7 +48,6 @@ class MovieInfoControllerIntgTest {
     void addMovieInfo() {
         var movieInfo = new MovieInfo(null, "Batman Begins test",
                 2005, List.of("Christian Bale", "Michael Cane"), LocalDate.parse("2005-06-15"));
-
         webTestClient
                 .post()
                 .uri(Movie_url)
@@ -97,10 +94,8 @@ class MovieInfoControllerIntgTest {
     @Test
     void updateMoviesInfosById() {
         var movieInfoId = "abc";
-
         var movieInfo = new MovieInfo(null, "Dark Knight Rises test update",
                 2005, List.of("Christian Bale", "Michael Cane"), LocalDate.parse("2005-06-15"));
-
         webTestClient
                 .put()
                 .uri(Movie_url + "/{id}", movieInfoId)
@@ -120,10 +115,8 @@ class MovieInfoControllerIntgTest {
     @Test
     void updateMoviesInfosById_NotFound() {
         var movieInfoId = "def";
-
         var movieInfo = new MovieInfo(null, "Dark Knight Rises test update",
                 2005, List.of("Christian Bale", "Michael Cane"), LocalDate.parse("2005-06-15"));
-
         webTestClient
                 .put()
                 .uri(Movie_url + "/{id}", movieInfoId)
@@ -147,5 +140,20 @@ class MovieInfoControllerIntgTest {
                     var savedMovieInfo = movieInfoEntityExchangeResult.getResponseBody();
                     assertNull(savedMovieInfo);
                 });
+    }
+
+    @Test
+    void getMovieInfoByYear(){
+        var uri = UriComponentsBuilder.fromUriString(Movie_url)
+                                           .queryParam("year", 2005)
+                                           .buildAndExpand().toUri();
+        webTestClient
+                .get()
+                .uri(uri)
+                .exchange()
+                .expectStatus()
+                .is2xxSuccessful()
+                .expectBodyList(MovieInfo.class)
+                .hasSize(1);
     }
 }

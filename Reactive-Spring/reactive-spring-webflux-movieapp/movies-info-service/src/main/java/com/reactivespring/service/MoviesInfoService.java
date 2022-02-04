@@ -19,11 +19,9 @@ public class MoviesInfoService {
          return movieInfoRepo.save(movieInfo);
     }
 
-    public Flux<MovieInfo> getAllMovieInfos() {
-        return movieInfoRepo.findAll();
-    }
+    public Flux<MovieInfo> getAllMovieInfos() { return movieInfoRepo.findAll(); }
 
-    public Mono<MovieInfo> getAllMovieInfosId(String id) {
+    public Mono<MovieInfo> getAllMoviesInfosById(String id) {
         return  movieInfoRepo.findById(id);
     }
 
@@ -40,5 +38,9 @@ public class MoviesInfoService {
 
     public Mono<Void> deleteMoviesInfosById(String id) {
         return movieInfoRepo.deleteById(id);
+    }
+
+    public Flux<MovieInfo> getMoviesByYear(Integer year) {
+        return movieInfoRepo.findByYear(year);
     }
 }
