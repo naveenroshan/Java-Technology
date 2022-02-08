@@ -111,7 +111,7 @@ public class MoviesInfoConrollerUnitTest {
     @Test
     void updateMoviesInfosById() {
         var movieInfoId = "abc";
-        var movieInfo = new MovieInfo(null, "Dark Knight Rises unittest update",
+        var movieInfo = new MovieInfo(movieInfoId, "Dark Knight Rises unittest update",
                 2005, List.of("Christian Bale", "Michael Cane"), LocalDate.parse("2005-06-15"));
         when(moviesInfoServiceMock.updateMovieInfosId(isA(MovieInfo.class),isA(String.class)).thenReturn(
                 Mono.just(new MovieInfo(movieInfoId, "Dark Knight Rises unittest update",
@@ -128,7 +128,7 @@ public class MoviesInfoConrollerUnitTest {
                     var updateMovieInfo = movieInfoEntityExchangeResult.getResponseBody();
                     assert updateMovieInfo != null;
                     assert updateMovieInfo.getMoviesInfoId() != null;
-                    assertEquals("Dark Knight Rises test update",updateMovieInfo.getName());
+                    assertEquals("Dark Knight Rises unittest update",updateMovieInfo.getName());
                 });
     }
 

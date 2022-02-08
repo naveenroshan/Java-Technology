@@ -18,12 +18,10 @@ public class ReviewRouter {
         return route()
                 .GET("/v1/helloworld",(request -> ServerResponse.ok().bodyValue("helloFromDemoFunctionalProgram")))
                 .nest(path("/v1/reviews"), builder -> {
-                    builder
-                            .POST("",request -> reviewHandler.addReview(request))
-                            .GET("", request -> reviewHandler.getReviewAll(request))
+                    builder .POST("",request -> reviewHandler.addReview(request))
+                            .GET("", request -> reviewHandler.getReviews(request))
                             .PUT("/{id}",request -> reviewHandler.updateReview(request))
                             .DELETE("/{id}",request -> reviewHandler.deleteReview(request));
-                })
-                .build();
+                }).build();
     }
 }

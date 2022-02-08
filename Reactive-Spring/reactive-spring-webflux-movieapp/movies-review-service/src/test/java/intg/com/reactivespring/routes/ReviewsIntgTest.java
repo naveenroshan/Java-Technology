@@ -96,7 +96,6 @@ public class ReviewsIntgTest {
         var reviewUpdate = new Review(null, 1L, "Not an Awesome Movie", 8.0);
         //when
         assert savedReview != null;
-
         webTestClient
                 .put()
                 .uri(REVIEW_URL+"/{id}", savedReview.getReviewId())
@@ -112,6 +111,5 @@ public class ReviewsIntgTest {
                     assertEquals(8.0, updatedReview.getRating());
                     assertEquals("Not an Awesome Movie", updatedReview.getComment());
                 });
-
     }
 }

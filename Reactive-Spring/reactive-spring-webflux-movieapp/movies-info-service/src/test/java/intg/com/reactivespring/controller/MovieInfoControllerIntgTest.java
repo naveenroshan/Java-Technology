@@ -154,6 +154,6 @@ class MovieInfoControllerIntgTest {
                 .expectStatus()
                 .is2xxSuccessful()
                 .expectBodyList(MovieInfo.class)
-                .hasSize(1);
+                .hasSize(3);
     }
 }
