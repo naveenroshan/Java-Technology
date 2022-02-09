@@ -55,3 +55,9 @@ Functional interface
 Router - Rest Endpoint are configured
 Handler - Code to handle the request is located
 ```
+
+- WebClient :
+```
+Reactive non blocking Rest Client
+Allow App to interact with other services in non-blocking way
+```
