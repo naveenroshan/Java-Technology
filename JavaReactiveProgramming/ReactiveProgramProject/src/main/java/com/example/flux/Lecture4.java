@@ -3,9 +3,7 @@ package com.example.flux;
 import com.example.utility.Util;
 import reactor.core.publisher.Flux;
 
-import java.sql.SQLOutput;
 import java.util.List;
-import java.util.stream.Stream;
 
 public class Lecture4 {
     public static void main(String[] args) {
