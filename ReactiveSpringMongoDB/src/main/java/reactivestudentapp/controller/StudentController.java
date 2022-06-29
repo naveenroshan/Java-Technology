@@ -1,7 +1,6 @@
 package reactivestudentapp.controller;
 
 import reactivestudentapp.domain.dto.StudentDTO;
-import reactivestudentapp.domain.entities.Student;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 import reactivestudentapp.domain.uiform.StudentForm;
