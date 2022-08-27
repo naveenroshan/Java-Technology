@@ -1,10 +1,7 @@
-# Spring web with Redis DB
+# Spring Cloud Ribbon for Load Balancer 
 
-> This project is based on the redis cache mechanism
+> This project is based on the spring cloud round ribbon
 
-> Annonation used in this project are :
- 	- @Cacheable
-	- @CacheEvict
-	- @CachePut 
+> here Chat book is the server and user in the client
 
-> Also the sample Crud operation with redis.
+>
