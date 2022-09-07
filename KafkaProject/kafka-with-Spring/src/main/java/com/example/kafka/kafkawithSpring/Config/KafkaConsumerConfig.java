@@ -32,10 +32,10 @@ public class KafkaConsumerConfig {
         return props;
     }
 
-    //creating producer instances using Producer factor
+    //creating consuer instances using consumer factor
     @Bean
     public ConsumerFactory<String, String> consumerFactory(){
-        //sending producerConfig has the parameter
+        //sending consumerConfig has the parameter
         return new DefaultKafkaConsumerFactory<>(consumerConfig());
     }
 
