@@ -19,7 +19,8 @@ public class SpringSecurityWithJwtApplication {
 		SpringApplication.run(SpringSecurityWithJwtApplication.class, args);
 	}
 
-	// adding the user and roles
+	// adding the user and roles to the Mysql DB every time
+	// we run the app by cleaning the existing data
 	@Bean
 	CommandLineRunner run(UserService userService){
 		return args -> {
